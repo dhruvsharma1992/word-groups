@@ -16,6 +16,8 @@ word-groups
 ======
  clone the repository and  open the cmd to navigate to django_app folder in the repository's directory.  type: python manage.py runserver 0.0.0.0{port}.. port can be any number preferably above 1000 
  
+ after  setup  write localhost:{port}/get in your browser and you would be able to use the app.
+ 
  I will  upload a installation  shell/bat  script  soon so  that  you can  install the  app  just  by  running  a single script.
  
  ENJOY

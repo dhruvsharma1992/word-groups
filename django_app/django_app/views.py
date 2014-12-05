@@ -48,6 +48,8 @@ class post(APIView):
             x.description = ob.description
             x.synonyms = ob.synonyms
             x.save()
+        response = Response()
+        response.status=status.HTTP_200_OK
         return Response()       
 
 class sample(APIView):

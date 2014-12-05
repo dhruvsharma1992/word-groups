@@ -1,0 +1,48 @@
+sever : seperate  : cut 
+duress : restrain : restrict
+fetter :  restrain with chains,  shackle : restrict
+incarcerate : imprison : restrict
+manacle  : shackle for   hands/feet  :restrict
+quarantine : isolation : restrict
+secluded : isolated : restrict
+shackle : chain : restrict
+Bloated : pampered : superiority
+arrogant  : undulY or excessively proud : superiority
+insolent : arrogant lack respect : superiority
+bumptious : self-assertive : superiority
+conceit : excessive pride : superiority
+contumely : insolent (insulting way) : superiority
+disdain: contempt : superioirty
+scornful : contemptous,dismissiv : superiority
+insolence : disrespectful : superiority
+haughty : arrogance :  superiority
+elated :  In hoigh spirits : superiority
+impertinent : insolent :superiority
+impudent : insolent: superiority
+overweening : presumptious,overconfident :superiority
+presumptuous : failing to observe the limits of what is permitted or appropriate : superiority
+peremptory : imperious : superiority
+ mincing : affectedly dainty : superiority 
+ pretentious : ostentatious , ambitious,attempting to impress by affecting greater importance or merit than is actually possesse:superiority
+ solicitous : concerned about welfare : pensive
+ perturb :disturbed,worried:pensive
+ craven : cowardly : frighten
+ appall:filled with fear: frighten
+ diffident:lacks  self-confidence : frighten
+ dismay : filled with fear : frighten
+ timorous : fearful : frighten
+ weak sister: one who is cowardly : frighten
+ intimidate: scared about : frighten
+ daunt: Intimidate: frighten
+ milquetoast: a timid, apologetic person: frighten
+ dastard:  coward:  frighten
+ timid: showing lack of courage: frighten
+ panache: flamboyance,flair:  exaggeration
+ Stilted: unnatural,bombastic:exaggeration 
+ ostentatious:unnecessary display:exaggeration
+ strut: pompous walk: lethargic
+ Hyperbole:  exaggeration:exaggeration
+ indolence:laziness:lethargic
+ braggart:boaster:exaggeration
+ effusive:expressing excessive emotion:exaggeration
+ gasconade:boastfulnes:exaggeration

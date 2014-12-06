@@ -16,13 +16,11 @@ th {text-align:center;}
 
 <div>
 	<div class="col-md-12">
-	<br/>
-	<br/>
 	</div>
 <div >
 <div class="col-md-12"  >
-<br/>
 <form class="form-inline" role="form">
+<h2><i><u> Insert Word </u></i></h2>
   <div class="form-group"> 
       <label class="" for="inputWord">Word</label>
       <input type="text" class="form-control" id="inputWord" placeholder=""> 
@@ -35,8 +33,13 @@ th {text-align:center;}
     <label class="" for="inputdescription">Description</label>
       <input type="text" class="form-conrol" id="inputdescription" >
   </div>
+  <div class="form-group">
+    <label class="" for="inputgroup">Word-Group</label>
+      <input type="text" class="form-conrol" id="inputgroup" >
+  </div>
   <button type="" class="btn btn-default submit">Submit</button>
   <h5 id="insert"></h5>
+  <br/>
 </form>
 
 
@@ -47,6 +50,7 @@ th {text-align:center;}
                 <th>Word</th>
                 <th>Synonyms</th>
                 <th>Description </th>
+                <th>Word-Groups </th>
                 
             </tr>
         </thead>
@@ -56,6 +60,7 @@ th {text-align:center;}
 		<td>{{ value.fields.word }}</td>
 		<td>{{ value.fields.synonyms }}</td>
 		<td>{{ value.fields.description }}</td>
+		<td>{{ value.fields.group }}</td>
 		</tr>
 	{% endfor  %}
 	</tbody>
@@ -66,8 +71,9 @@ $( function () {
     $("#table_id").DataTable({
 		
         "paging":   true,
-        "ordering": false,
-        "info":     false
+        "ordering": true,
+        "info":     false,
+		"order": [[ 1, "asc" ]]
     });
 	
 	$(".submit").click(function(e){
@@ -75,7 +81,7 @@ $( function () {
 	
 	var path=window.location.href.replace(window.location.pathname,"");
 	
-	var url = path+"/post?word="+$( "#inputWord").val()+"&synonym="+$("#inputSynonyms").val()+"&description="+$("#inputdescription").val();
+	var url = path+"/post?word="+$( "#inputWord").val()+"&synonym="+$("#inputSynonyms").val()+"&description="+$("#inputdescription").val()+"&group="+$("#inputgroup").val();
 	console.log(url);
 	$.ajax({
 			url:url,

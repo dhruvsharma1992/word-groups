@@ -36,8 +36,10 @@ class post(APIView):
         word = request.GET.get('word', None)
         synonym = request.GET.get('synonym', None)
         description = request.GET.get('description', None)
+        group = request.GET.get('group', None)
+        
         ob = words()
-        ob.create(word, synonym, description)
+        ob.create(word, synonym, description,group)
         try:
             ob.save()
         except:
@@ -47,9 +49,10 @@ class post(APIView):
             x.word = ob.word
             x.description = ob.description
             x.synonyms = ob.synonyms
+            x.group=ob.group
             x.save()
-        response = Response()
-        response.status=status.HTTP_200_OK
+        #response = Response()
+        #response.status=status.HTTP_200_OK
         return Response()       
 
 class sample(APIView):

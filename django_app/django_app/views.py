@@ -61,7 +61,7 @@ class sample(APIView):
         line = fd.readline()
         while line:
             ob = words()
-            ob.create(line.split(":")[0],line.split(":")[2],line.split(":")[1])
+            ob.create(line.split(":")[0]," ",line.split(":")[2],line.split(":")[1])
             ob.save()
             line = fd.readline()
         

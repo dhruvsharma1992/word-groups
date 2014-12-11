@@ -12,8 +12,15 @@ from django.shortcuts import *
 from django.forms.models import model_to_dict
 import json
 from settings import  *
+import sys
+if 'win' in sys.platform:
+    template_dir = os.path.abspath(os.path.dirname(__file__))+"\\templates\\"
+    project_dir = os.path.abspath(os.path.dirname(__file__))+"\\"
 
+else:
 
+    template_dir = os.path.abspath(os.path.dirname(__file__))+"/templates/"
+    project_dir = os.path.abspath(os.path.dirname(__file__))+"/"
 class  test(APIView):
     def get(self, request, *ar, **kwargs):
         print 'test'
@@ -27,7 +34,7 @@ class get(APIView):
         data = json.loads(data)
         
         print BASE_DIR
-        return render_to_response(BASE_DIR+ "\\django_app\\templates\\table.html",{'data':data})
+        return render_to_response(template_dir +"table.html",{'data':data})
         #return HttpResponse (json.dumps( {'data':data} ), content_type="application/json")
         
 
@@ -57,7 +64,7 @@ class post(APIView):
 
 class sample(APIView):
     def get(self,request,*ar,**kwargs):
-        fd=file( BASE_DIR+"\\django_app\\sam_words.txt")
+        fd=file( project_dir+"sam_words.txt")
         line = fd.readline()
         while line:
             ob = words()

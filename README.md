@@ -11,6 +11,8 @@ word-groups
  
  2) djangorestframework (pip instal djangorestframework)
  
+ ** Ihave included a setup.sh for linux users. The same can be converted to a setup.bat  BUT  YOU   SHOULD  HAVE  PIP  INSTALLED TO  USE  SETUP.SH**
+ 
  
  Setup
 ======

@@ -6,8 +6,10 @@ class words(models.Model):
     synonyms = models.CharField()
     description=models.CharField()
     group=models.CharField()
-    def create(self,word,synonyms,descriptn,group):
+    sentence=models.CharField()
+    def create(self,word,synonyms,descriptn,sentence,group):
         self.word=word
         self.synonyms=synonyms
         self.description=descriptn 
+        self.sentence=sentence
         self.group=group

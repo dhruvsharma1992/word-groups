@@ -10,6 +10,5 @@ urlpatterns = patterns('',
     url(r'^test', test.as_view(),name='test'),
     url(r'^get', get.as_view(),name='data'),
     url(r'^post', post.as_view(),name='post'),
-    url(r'^sam', sample.as_view(),name='data'),
-    url(r'^del', sample.as_view(),name='data'),
+    url(r'^sam', sample.as_view(),name='data'), 
 )

@@ -21,6 +21,8 @@ else:
 
     template_dir = os.path.abspath(os.path.dirname(__file__))+"/templates/"
     project_dir = os.path.abspath(os.path.dirname(__file__))+"/"
+print template_dir
+print project_dir
 class  test(APIView):
     def get(self, request, *ar, **kwargs):
         print 'test'
